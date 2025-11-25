@@ -30,7 +30,7 @@ How It Works
 
 Getting Started
 	1.	Clone the repository:
-			git clone https://github.com/yourusername/fantasy-football-ai.git
+			git clone https://github.com/rweiss11/fantasy-football-ai.git
 	2.	Open the notebook in Carnets, Jupyter, or Colab.
 	3.	Ensure fantasy_players.csv is in /data/.
 	4.	Run cells to generate draft rankings and recommendation
