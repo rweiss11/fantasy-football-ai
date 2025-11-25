@@ -25,3 +25,30 @@ How It Works
 	1.	Input Data: CSV with player stats and projections (/data/fantasy_players.csv).
 	2.	Processing: Notebook applies AI prompts or scoring logic to rank players.
 	3.	Output: Ranked player list with suggestions for optimal draft picks.
+
+⸻
+
+Getting Started
+	1.	Clone the repository:
+			git clone https://github.com/yourusername/fantasy-football-ai.git
+	2.	Open the notebook in Carnets, Jupyter, or Colab.
+	3.	Ensure fantasy_players.csv is in /data/.
+	4.	Run cells to generate draft rankings and recommendation
+
+⸻
+
+Folder Structure
+/README.md
+/data/fantasy_players.csv       # Sample player data
+/notebooks/fantasy_draft.ipynb  # AI draft notebook
+/scripts/generate_csv.py        # Optional CSV generation script
+/docs/                          # Architecture diagram and screenshots
+
+
+⸻
+
+Next Steps / Roadmap
+	•	Add more detailed scoring logic (e.g., position scarcity, risk analysis).
+	•	Integrate live player stats from APIs.
+	•	Build a simple UI for interactive draft guidance.
+	•	Add team-specific strategy recommendations
