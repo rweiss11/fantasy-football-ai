@@ -1,0 +1,28 @@
+import pandas as pd
+import random
+
+positions = ['QB', 'RB', 'WR', 'TE', 'K', 'DEF']
+teams = ['ARI','ATL','BAL','BUF','CAR','CHI','CIN','CLE','DAL','DEN',
+         'DET','GB','HOU','IND','JAX','KC','LV','LAC','LAR','MIA',
+         'MIN','NE','NO','NYG','NYJ','PHI','PIT','SEA','SF','TB',
+         'TEN','WAS']
+
+num_players = 450
+
+data = []
+
+for i in range(1, num_players+1):
+    player = f'Player{i}'
+    position = random.choice(positions)
+    team = random.choice(teams)
+    bye = random.randint(4, 14)
+    projected_points = round(random.uniform(50, 300), 1)
+    adp = round(random.uniform(1, num_players), 1)
+    tier = random.randint(1, 10)
+    
+    data.append([player, position, team, bye, projected_points, adp, tier])
+
+df = pd.DataFrame(data, columns=['Player','Position','Team','Bye','ProjectedPoints','ADP','Tier'])
+df.to_csv('fantasy_players.csv', index=False)
+
+print(df.head())
