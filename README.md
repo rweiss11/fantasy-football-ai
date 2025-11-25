@@ -25,7 +25,3 @@ How It Works
 	1.	Input Data: CSV with player stats and projections (/data/fantasy_players.csv).
 	2.	Processing: Notebook applies AI prompts or scoring logic to rank players.
 	3.	Output: Ranked player list with suggestions for optimal draft picks.
-
-Optional Visuals:
-	•	Architecture diagram (/docs/architecture.png)
-	•	Sample outputs (/docs/screenshots.png)
